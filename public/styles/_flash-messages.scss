@@ -1,0 +1,42 @@
+.flash-messages{
+    width:400px;
+}
+
+.flash{
+    margin:0.5rem 0;
+    display:flex;
+    justify-content: space-between;
+    padding-left:1rem;
+    width:100%;
+    height:auto;
+    border:1px solid;
+    border-radius:3px;
+
+    &--success{
+        background:rgba($color: green, $alpha: 0.1);
+        color:green;
+        border-color:green;    
+    }
+    &--info{
+        background:rgba($color: dodgerblue, $alpha: 0.1);
+        color:dodgerblue;
+        border-color:dodgerblue;
+    }
+    &--error{
+        background:rgba($color: crimson, $alpha: 0.1);
+        color:crimson;
+        border-color:crimson;    
+    }
+    &--warning{
+        background:rgba($color: goldenrod, $alpha: 0.1);
+        color:chocolate;
+        border-color:chocolate; 
+    }
+
+    button{
+        font-size:1.5rem;
+        color:inherit;
+        background:none;
+        border:none;
+    }
+}

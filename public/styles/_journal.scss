@@ -1,0 +1,84 @@
+.journal{
+
+    width:100%;
+    border:1px solid black;
+    border-radius:5px;
+    margin-right:2rem;
+    
+    h2{
+        padding-left:2rem;
+    }
+    .empty-journal{
+        font-weight:200;
+        font-size: 2rem;
+        padding: 2rem;
+        max-width:500px;
+    }
+
+    .entries{
+        width:100%;
+        list-style:none;
+        padding:0;
+        tr:nth-child(odd) {background: #F6f6f6}
+        border-collapse: collapse;
+    }
+
+    .entry{
+        height:48px;
+
+        td{
+            vertical-align: middle;
+            border:none;
+        
+        }
+
+        button{
+            background:none;
+            border:none;
+            padding:0;
+        }
+
+        &__name{
+            min-width:400px;
+        }
+
+        &__tags{
+            padding-right:3rem;
+        }
+
+        &__action{
+            font-size:0.7rem;
+            border:1px solid #555;
+            border-radius:3px;
+            padding:0.25rem;
+            margin:0.1rem;
+            display:inline-block;
+        }
+
+        &__tag{
+            background:honeydew;
+            border-color:green;
+            color:green;
+        }
+
+        &__edit{
+            background:none;
+            border-color:#555;
+            color:#555;
+        }
+
+        &__delete{
+            background:#FFD8D2;
+            border-color:orangered;
+            color:orangered;
+        }
+
+        &__icon{
+            width:32px;
+            height:32px;
+            padding:8px;
+        }
+    }
+
+
+}

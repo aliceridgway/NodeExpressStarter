@@ -1,0 +1,18 @@
+extends layout
+
+include mixins/_entryForm
+include mixins/_journal
+include mixins/_key
+
+
+block content
+  h1= title
+  p A bullet journal is an alternative to the traditional to-do list. Find out more at https://bulletjournal.com/
+  p This app is intended as a Node/Express starter using MongoDB, pug, nodemon and eslint.
+
+  .wrapper
+
+    +journal(entries)
+    .forms
+      +entryForm(entry)
+      +key()

@@ -1,0 +1,252 @@
+.entry-form {
+  min-width: 400px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  padding: 0 2rem 1rem 2rem;
+}
+
+.entry-form input[type="text"] {
+  width: 100%;
+  height: 24px;
+  font-size: 0.9rem;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 0.5rem 0 0 0;
+  margin: 1.5rem 0;
+}
+
+.entry-form input[type="text"]:focus {
+  outline-width: 0;
+  border-bottom: 3px solid teal;
+}
+
+.entry-form__type ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+.entry-form__type__choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem 1rem 0.5rem 0rem;
+  margin-right: 0.5rem;
+}
+
+.entry-form__tags ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+.entry-form__tags__choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem 1rem 0.5rem 0rem;
+  margin-right: 0.5rem;
+}
+
+.entry-form input[type="submit"] {
+  height: 24px;
+  width: 60px;
+  background: limegreen;
+  margin: 1rem 0;
+}
+
+.journal {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 2rem;
+}
+
+.journal h2 {
+  padding-left: 2rem;
+}
+
+.journal .empty-journal {
+  font-weight: 200;
+  font-size: 2rem;
+  padding: 2rem;
+  max-width: 500px;
+}
+
+.journal .entries {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+.journal .entries tr:nth-child(odd) {
+  background: #F6f6f6;
+}
+
+.journal .entry {
+  height: 48px;
+}
+
+.journal .entry td {
+  vertical-align: middle;
+  border: none;
+}
+
+.journal .entry button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.journal .entry__name {
+  min-width: 400px;
+}
+
+.journal .entry__tags {
+  padding-right: 3rem;
+}
+
+.journal .entry__action {
+  font-size: 0.7rem;
+  border: 1px solid #555;
+  border-radius: 3px;
+  padding: 0.25rem;
+  margin: 0.1rem;
+  display: inline-block;
+}
+
+.journal .entry__tag {
+  background: honeydew;
+  border-color: green;
+  color: green;
+}
+
+.journal .entry__edit {
+  background: none;
+  border-color: #555;
+  color: #555;
+}
+
+.journal .entry__delete {
+  background: #FFD8D2;
+  border-color: orangered;
+  color: orangered;
+}
+
+.journal .entry__icon {
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+}
+
+.key {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+
+.key div {
+  margin: 1rem;
+}
+
+.key img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+}
+
+.key p {
+  font-size: 0.8rem;
+  margin: 0.5rem 0 0 0;
+}
+
+.flash-messages {
+  width: 400px;
+}
+
+.flash {
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 1rem;
+  width: 100%;
+  height: auto;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.flash--success {
+  background: rgba(0, 128, 0, 0.1);
+  color: green;
+  border-color: green;
+}
+
+.flash--info {
+  background: rgba(30, 144, 255, 0.1);
+  color: dodgerblue;
+  border-color: dodgerblue;
+}
+
+.flash--error {
+  background: rgba(220, 20, 60, 0.1);
+  color: crimson;
+  border-color: crimson;
+}
+
+.flash--warning {
+  background: rgba(218, 165, 32, 0.1);
+  color: chocolate;
+  border-color: chocolate;
+}
+
+.flash button {
+  font-size: 1.5rem;
+  color: inherit;
+  background: none;
+  border: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0 2rem;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 4rem;
+}
+/*# sourceMappingURL=style.css.map */
